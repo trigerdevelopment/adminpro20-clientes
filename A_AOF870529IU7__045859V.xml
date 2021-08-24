@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  Version="3.3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd"
+  Folio="045859V"
+  Fecha="2020-01-31T16:23:03"
+  Sello="TlbmVMp/GUe8oE9doJaq9qkZYrFgZrLDWaZUXDPK5FQzdyRP2C/fWI8weIqfLDYh+MFi7bloe6XBx32vT9I+/MQ7ZSjcJH80aLQfA2j5sMfdu0cR45PvtN0kD0asDpTmRXnn7Qb/xQ5LYfWXcUso1KDFQ9e5O6wx8v2Zmxto1J2OddHpRQArnuxT6TlrG8lukcw0DhKfTGX9bwQN0R6yjHM4MvHz3qz0HrH3EPFvqBZlWlPDQ4Z1hPfprEBtRdU/wlCuhQAsRaNfoCzXn/KFdU9Z0/cL/fGsJoiP/97CXMo6SDkJWh+vYjH34xdFErtCbwD4ie8iH1BAq/B5IiH6Jg=="
+  FormaPago="01"
+  NoCertificado="00001000000401620720"
+  Certificado="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"
+  CondicionesDePago="CONTADO"
+  SubTotal="205.81"
+  Moneda="MXN"
+  TipoCambio="1"
+  Total="238.74"
+  TipoDeComprobante="I"
+  MetodoPago="PUE"
+  LugarExpedicion="66468" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor
+    Rfc="AOF870529IU7"
+    Nombre="Abastecedora de Oficinas, S.A. de C.V."
+    RegimenFiscal="601" />
+  <cfdi:Receptor
+    Rfc="ANT021004RI7"
+    Nombre="ALIMENTOS NATURALES DE TRIGO GERMINADO S.A DE C.V"
+    UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto
+      ClaveProdServ="12181501"
+      NoIdentificacion="050704"
+      Cantidad="1.000000"
+      ClaveUnidad="H87"
+      Unidad="PIEZA"
+      Descripcion="CUENTA FACIL AZOR 642 14 GRS. BL/2 BL"
+      ValorUnitario="15.470000"
+      Importe="15.470000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado
+            Base="15.470000"
+            Impuesto="002"
+            TipoFactor="Tasa"
+            TasaOCuota="0.160000"
+            Importe="2.475200" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto
+      ClaveProdServ="14111537"
+      NoIdentificacion="066603"
+      Cantidad="2.000000"
+      ClaveUnidad="H87"
+      Unidad="PIEZA"
+      Descripcion="ETIQUETA BLANCA BOLSA JANEL 24 MODELOS 07 25X38 BOLSA"
+      ValorUnitario="14.810000"
+      Importe="29.620000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado
+            Base="29.620000"
+            Impuesto="002"
+            TipoFactor="Tasa"
+            TasaOCuota="0.160000"
+            Importe="4.739200" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto
+      ClaveProdServ="31201517"
+      NoIdentificacion="066582"
+      Cantidad="1.000000"
+      ClaveUnidad="H87"
+      Unidad="PIEZA"
+      Descripcion="CINTA ADHESIVA EMPAQUE TUK 184 COLOR 48 X 50 MTS. C/6 AMARILLO PAQ"
+      ValorUnitario="62.230000"
+      Importe="62.230000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado
+            Base="62.230000"
+            Impuesto="002"
+            TipoFactor="Tasa"
+            TasaOCuota="0.160000"
+            Importe="9.956800" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto
+      ClaveProdServ="31201512"
+      NoIdentificacion="031672"
+      Cantidad="6.000000"
+      ClaveUnidad="H87"
+      Unidad="PIEZA"
+      Descripcion="CINTA ADHESIVA TUK 200 12 X 65 MTS. CORTE FACIL ROLLO"
+      ValorUnitario="6.690000"
+      Importe="40.140000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado
+            Base="40.140000"
+            Impuesto="002"
+            TipoFactor="Tasa"
+            TasaOCuota="0.160000"
+            Importe="6.422400" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto
+      ClaveProdServ="14111525"
+      NoIdentificacion="002724"
+      Cantidad="1.000000"
+      ClaveUnidad="H87"
+      Unidad="PIEZA"
+      Descripcion="BOND BLANCO SCRIBE VERDE 21.5 X 28 CARTA 75 GMS.BCO.93% C/500"
+      ValorUnitario="58.350000"
+      Importe="58.350000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado
+            Base="58.350000"
+            Impuesto="002"
+            TipoFactor="Tasa"
+            TasaOCuota="0.160000"
+            Importe="9.336000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos
+    TotalImpuestosTrasladados="32.93">
+    <cfdi:Traslados>
+      <cfdi:Traslado
+        Impuesto="002"
+        TipoFactor="Tasa"
+        TasaOCuota="0.160000"
+        Importe="32.93" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      Version="1.1"
+      UUID="a59954ca-182a-4b9e-b987-136a7258dac0"
+      FechaTimbrado="2020-01-31T16:23:04"
+      RfcProvCertif="EDI101020E99"
+      SelloCFD="TlbmVMp/GUe8oE9doJaq9qkZYrFgZrLDWaZUXDPK5FQzdyRP2C/fWI8weIqfLDYh+MFi7bloe6XBx32vT9I+/MQ7ZSjcJH80aLQfA2j5sMfdu0cR45PvtN0kD0asDpTmRXnn7Qb/xQ5LYfWXcUso1KDFQ9e5O6wx8v2Zmxto1J2OddHpRQArnuxT6TlrG8lukcw0DhKfTGX9bwQN0R6yjHM4MvHz3qz0HrH3EPFvqBZlWlPDQ4Z1hPfprEBtRdU/wlCuhQAsRaNfoCzXn/KFdU9Z0/cL/fGsJoiP/97CXMo6SDkJWh+vYjH34xdFErtCbwD4ie8iH1BAq/B5IiH6Jg=="
+      NoCertificadoSAT="00001000000405428713"
+      SelloSAT="TnZOUSozkKjmyFbw07FhzvfR4UlMIVMt3RgWsTYe4cd0miaBJDrmCcpm0BSsz40eIMRO+3hWeuk6fymdNLT7VHvlONkC0a48u/JpvgubqfABFwvfj7D0TXEO3TYQxthkbbywzygGaikUwzu88iTUSidZqo7ki/b31Qoi0kueUjMD53YpOKdZb624qyUNe00Lf26JypvniKJdRFR3CoaBkPtgppBjo2CFH/MWdCaCvTpRyMHgQ6GyPTEq+ScAxdZMao8lBFJSTVXc9aHKrPufXmfpNI/I//+6Yr4VrKl6002uRHHRtGQI6Kck6JzD6fYN1gaWmFb9Wg/VZ0VAvR+pRg=="
+      xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

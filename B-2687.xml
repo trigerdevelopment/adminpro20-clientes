@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante Version="3.3" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Serie="B" Folio="2687" Fecha="2020-01-23T19:57:50" NoCertificado="00001000000408676400" Certificado="MIIGSDCCBDCgAwIBAgIUMDAwMDEwMDAwMDA0MDg2NzY0MDAwDQYJKoZIhvcNAQELBQAwggGyMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMV0wWwYJKoZIhvcNAQkCDE5SZXNwb25zYWJsZTogQWRtaW5pc3RyYWNpw7NuIENlbnRyYWwgZGUgU2VydmljaW9zIFRyaWJ1dGFyaW9zIGFsIENvbnRyaWJ1eWVudGUwHhcNMTcxMjIwMjMwNjU0WhcNMjExMjIwMjMwNjU0WjCB6DEuMCwGA1UEAxMlSU1QUkVTT1JBIFJFWUxJIERFIE1PTlRFUlJFWSBTQSBERSBDVjEuMCwGA1UEKRMlSU1QUkVTT1JBIFJFWUxJIERFIE1PTlRFUlJFWSBTQSBERSBDVjEuMCwGA1UEChMlSU1QUkVTT1JBIFJFWUxJIERFIE1PTlRFUlJFWSBTQSBERSBDVjElMCMGA1UELRMcSVJNMDUwNzE5TEQ0IC8gTE9DTDU1MDYyNkVNQTEeMBwGA1UEBRMVIC8gTE9DTDU1MDYyNkhOTFBWQjAxMQ8wDQYDVQQLEwZNQVRSSVowggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCaLrKJCL3Ad8uYW9CBXkwwHLQi9om6E7Znxz4E4TZB50xeIUDZXs8gi9zA42+T1u/+I8YxHa+tu2VUTUK9DcWhXR5qUJfvZTfJ0F0DIY7sIp+oWee6Ey6uLgIYBYc9S8NYsBkq+nQVSm2jDSq/nbsOD1n52Bh5Cva0CshcAtKO5I+VEb+Ppjf7k9tzUO04+gX8JX9Sog4z1K4U7sLz8k1DAL151Rg/WJD0cnQw7LMKLsy83y+OTDlVM82leJrl9i+GHiPk8qBNO1k8hdsOmzthVi47ruDQmpIPATz09FFrkbnEhug2dQWkpeCbobBp4nEA6HRLMILTzLkYAG6/Yj5PAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBUaHVDpcDiwHgfIBkuJC0IBTtWaW8tjh3zPVSC70UYmfLvl0PvkGjjTClJj9hi6+8N0R+VY1Qb8at8KcJwdZ1LVc4fUsfjqi06Pev+6yq9GaSlA8YqemfFJwZI2BasJIIyDLi1Vb9NGYhr5B8zbVn7FPDvwPzl65xO87EiE8QD+Ewolt1z0SjicSxcSSL3zhr6QJa3qAPHDAiz3Ifk2k58FHqOoMHVVUzWQbDahtjl8Rf7ekCmHPBDLm15OrcbYNrJxgkGy/55h/kIe2e0qAtgHlOKnQSx5xcBmdtDkRM33nct0Z2502kGJj9le3i14m8jCN7+Eg5RuqN8SXuek9mctePs6fGXv7s3G0Vebq8uipqgwqDJDBrlbR9HX+GPICmLYeXz3Ey+Cmra8ekFnsf80vzBefvaiqsBrWKMcdILxAAgHpzkzBYWlvSdFgdA41od6JJZCkutPLiBQslbAK2wmP4uZ7yecMdssWzRENA2Z9l0dVISvrp+eQuBaDfsYsZ9lYF1C7XVW8pmFP1T+JUnNdzbue7KRPsPlFRbbtUrHOlsjrL+fqj+thu2AVTPpJflZmAtAh0WAa8V1H8SMOceK2sukp2P+kgJ7zNnCR2jSKiS4an9iXjuK8tqLEQQJai7qWRP2+IO9jKmg28wHc8fJ0NPeFJElfd+DKGo5iWVRQ==" Moneda="MXN" TipoDeComprobante="I" MetodoPago="PPD" FormaPago="99" CondicionesDePago="CREDITO: 45 DIAS" SubTotal="4634.00" Total="5375.44" LugarExpedicion="64530" Sello="VekMsa510Rm3pzJesPp6uPFatZFQFOGraDGlCjkhffFz32+tiIU2voaZdHQb2UZ/Jx17w1DiN0JAc6kfjT3TNMgVpvKqM4C1RshmSkUGwBapvkROY4czOCrZuI2iPOzAIiQpVlSdR25X5rbVKsbCUBytNZrqBl7eeC1gWZACbx2edRqoRVjckUtsmvinTyKnXII6YgbuADtcFIHk2tciNbXFwyQ+EmlO27w3S82S4GzDbs+3tFyzgQJ1Se3PR3Yr0M6EkfUpPAQy/nhwf2/kZ8Ej2IdcqXfCZwTLQgqWgmK6u48ei0yW2N1xO4zf1NRhKH24jS2Nzn968918CsgXwg=="><cfdi:Emisor Rfc="IRM050719LD4" Nombre="IMPRESORA REYLI DE MONTERREY S.A. DE C.V." RegimenFiscal="601"/>
+<cfdi:Receptor Rfc="ANT021004RI7" Nombre="Alimentos Naturales de Trigo Germinado S.A. de C.V."  UsoCFDI="G01"/>
+<cfdi:Conceptos>
+<cfdi:Concepto ClaveProdServ="24121500" Cantidad="1500.00" ClaveUnidad="H87" Descripcion="CLAVE: CAJA TOSATADA TRIGER GENERICA. CAJA DE CARTON KRAFT IMPRESA. REM 6748 DEL 17/ENE/20" ValorUnitario="2.00" Importe="3000.00">
+<cfdi:Impuestos>
+<cfdi:Traslados>
+<cfdi:Traslado Base="3000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="480.00"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+</cfdi:Concepto><cfdi:Concepto ClaveProdServ="55121606" Cantidad="256.00" ClaveUnidad="H87" Descripcion="CLAVE: ETIQUETA TORTILLA TRIGO. ETIQUETA EN PAPEL ADHESIVO IMPRESA. REM 6748 DEL 17/ENE/20" ValorUnitario="0.86" Importe="220.16">
+<cfdi:Impuestos>
+<cfdi:Traslados>
+<cfdi:Traslado Base="220.16" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="35.23"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+</cfdi:Concepto><cfdi:Concepto ClaveProdServ="55121606" Cantidad="356.00" ClaveUnidad="H87" Descripcion="CLAVE: ETIQUETA TORTILLA NOPAL Y LINAZA. ETIQUETA EN PAPEL ADHESIVO IMPRESA. REM 6748 DEL 17/ENE/20" ValorUnitario="0.86" Importe="306.16">
+<cfdi:Impuestos>
+<cfdi:Traslados>
+<cfdi:Traslado Base="306.16" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="48.99"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+</cfdi:Concepto><cfdi:Concepto ClaveProdServ="55121606" Cantidad="944.00" ClaveUnidad="H87" Descripcion="CLAVE: ETIQUETA TORTILLA TRIGO. ETIQUETA EN PAPEL ADHESIVO IMPRESA. REM 6759 DEL 22/ENE/20" ValorUnitario="0.86" Importe="811.84">
+<cfdi:Impuestos>
+<cfdi:Traslados>
+<cfdi:Traslado Base="811.84" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="129.89"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+</cfdi:Concepto><cfdi:Concepto ClaveProdServ="55121606" Cantidad="344.00" ClaveUnidad="H87" Descripcion="CLAVE: ETIQUETA TORTILLA NOPAL Y LINAZA. ETIQUETA EN PAPEL ADHESIVO IMPRESA. REM 6759 DEL 22/ENE/20" ValorUnitario="0.86" Importe="295.84">
+<cfdi:Impuestos>
+<cfdi:Traslados>
+<cfdi:Traslado Base="295.84" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="47.33"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+</cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="741.44">
+<cfdi:Traslados>
+<cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000"  Importe="741.44"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>	<cfdi:Complemento>
+		<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="ED8711C4-3E4C-11EA-A21B-00155D014009" FechaTimbrado="2020-01-23T19:57:51" RfcProvCertif="TBN040609RKA" SelloCFD="VekMsa510Rm3pzJesPp6uPFatZFQFOGraDGlCjkhffFz32+tiIU2voaZdHQb2UZ/Jx17w1DiN0JAc6kfjT3TNMgVpvKqM4C1RshmSkUGwBapvkROY4czOCrZuI2iPOzAIiQpVlSdR25X5rbVKsbCUBytNZrqBl7eeC1gWZACbx2edRqoRVjckUtsmvinTyKnXII6YgbuADtcFIHk2tciNbXFwyQ+EmlO27w3S82S4GzDbs+3tFyzgQJ1Se3PR3Yr0M6EkfUpPAQy/nhwf2/kZ8Ej2IdcqXfCZwTLQgqWgmK6u48ei0yW2N1xO4zf1NRhKH24jS2Nzn968918CsgXwg==" NoCertificadoSAT="00001000000403557578" SelloSAT="j5tB0BNRNJmMRfQmuIPy+mRtlC0mE15f8p9RxVV35/NDIMPp9ujJkJk9rsgc/FND1//m/ygrHolDaZXqGblNQkIuxFjTtDFpThr9XNHl8BSqvN12e1eRUgKFrTn4ilwnrl5uTWNMm0G9FQqxT/O4PmMxS+rz9j3Rhv1HL+QxKbDlxoydQMQ9zhIGS4eDtZMIEB/gnBcLXCQOLqEbVjEx6dP5lWr4vUZMhqh/rX6EkjJkZV3wblg68yPltq263aI4Vlm9403o5fJrQrQV2JHSltfT5glAhWS7+lI5g20jeFHAFOXtOZll0tsuyb5nOCYLJY0QWocoEk+5AG7JCLrpVw=="/>
+	</cfdi:Complemento>
+</cfdi:Comprobante>
