@@ -23,4 +23,9 @@ public interface MovementsWharehouseRepository extends CrudRepository<MovementsW
 
     @Query("SELECT SUM(d.entrance - d.issues) as total FROM MovementsWharehouse d WHERE Month(d.fecha)=?1 AND d.code = ?2")
     BigDecimal existInventary(int date, String code);
+
+    @Query("SELECT SUM(d.totalCost) FROM MovementsWharehouse d WHERE Month(d.fecha)=?1 AND Year(d.fecha)=?2 AND d.customer.id >0")
+    BigDecimal  getSalesCostByMonth(int date, int year);
+
+
 }

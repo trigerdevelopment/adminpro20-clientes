@@ -35,6 +35,7 @@ public interface SalesReportsRepository extends PagingAndSortingRepository<Invoi
     @Query("SELECT SUM(d.total) FROM Invoice d WHERE Month(d.fecha)=?1 AND Year(d.fecha)=?2 AND d.customer.id = ?3")
     BigDecimal  getSumTotalByCustomer(int date, int year, Long id);
 
+
     @Query("SELECT SUM(d.total) FROM Invoice d WHERE d.fecha >= ?1 AND d.fecha <= ?2 AND d.company LIKE %?3% AND d.sucursal LIKE %?4% AND d.customer.id = ?5")
     BigDecimal  getSumTotalByCustomerByQuery(GregorianCalendar ini, GregorianCalendar fin, String company, String sucursal, Long id);
 

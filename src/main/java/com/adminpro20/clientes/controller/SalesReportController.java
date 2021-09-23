@@ -3,7 +3,9 @@ package com.adminpro20.clientes.controller;
 
 import com.adminpro20.clientes.model.Customer;
 import com.adminpro20.clientes.model.CustomerSalesByMonth;
+import com.adminpro20.clientes.model.SalesCostByMonth;
 import com.adminpro20.clientes.repository.CustomerRepository;
+import com.adminpro20.clientes.repository.inventory.MovementsWharehouseRepository;
 import com.adminpro20.clientes.repository.reports.CustomerSalesByMonthRepository;
 import com.adminpro20.clientes.repository.reports.SalesByProductRepository;
 import com.adminpro20.clientes.repository.reports.SalesReportsRepository;
@@ -33,6 +35,7 @@ public class SalesReportController {
     public final CustomerRepository customerRepository;
     public final CustomerSalesByMonthRepository customerSalesByMonthRepository;
     public final SalesByProductRepository salesByProductRepository;
+    public final MovementsWharehouseRepository movementsWharehouseRepository;
 
 //    public TestController(SalesReportsRepository salesReportsRepository, CustomerRepository customerRepository, CustomerSalesByMonthRepository customerSalesByMonthRepository, SalesByProductRepository salesByProductRepository) {
 //        this.salesReportsRepository = salesReportsRepository;
@@ -44,11 +47,12 @@ public class SalesReportController {
     HttpHeaders headers = new HttpHeaders();
 
 
-    public SalesReportController(SalesReportsRepository salesReportsRepository, CustomerRepository customerRepository, CustomerSalesByMonthRepository customerSalesByMonthRepository, SalesByProductRepository salesByProductRepository) {
+    public SalesReportController(SalesReportsRepository salesReportsRepository, CustomerRepository customerRepository, CustomerSalesByMonthRepository customerSalesByMonthRepository, SalesByProductRepository salesByProductRepository, MovementsWharehouseRepository movementsWharehouseRepository) {
         this.salesReportsRepository = salesReportsRepository;
         this.customerRepository = customerRepository;
         this.customerSalesByMonthRepository = customerSalesByMonthRepository;
         this.salesByProductRepository = salesByProductRepository;
+        this.movementsWharehouseRepository = movementsWharehouseRepository;
     }
 
     @RequestMapping("/get-sales")
@@ -196,6 +200,118 @@ public class SalesReportController {
 
 
         return new ResponseEntity<>( customerSalesByMonthList, HttpStatus.OK);
+    }
+
+
+    @RequestMapping("/get-sales-cost")
+    public ResponseEntity<?> getSalesCostByMonth(
+            @RequestParam(required = false ) @DateTimeFormat(pattern = DATE_PATTERN) Date date
+    ) {
+        System.out.println("LLEGADA DE DATE " + date);
+        int year =0;
+        if (date != null) {
+            gregorianCalendar.setTime(date);
+            year = gregorianCalendar.get(Calendar.YEAR);
+            System.out.println("AÑO A CONSIDERAR " + year);
+
+        } else {
+            gregorianCalendar = (GregorianCalendar) Calendar.getInstance();
+            year =  Calendar.getInstance().get(Calendar.YEAR);
+            System.out.println("AÑO ACTUAL " + year);
+        }
+
+//        List<SalesCostByMonth> salesCostByMonths = new ArrayList<>();
+        SalesCostByMonth salesCostByMonth = new SalesCostByMonth();
+            for(int i = 1; i<13 ; i++){
+
+
+                    BigDecimal total = movementsWharehouseRepository.getSalesCostByMonth(i,year);
+                    if(total !=null){
+
+                    switch (i){
+                        case 1:
+                            salesCostByMonth.setJanuary(total);
+                            break;
+                        case 2:
+                            salesCostByMonth.setFebruary(total);
+                            break;
+                        case 3:
+                            salesCostByMonth.setMarch(total);
+                            break;
+                        case 4:
+                            salesCostByMonth.setApril(total);
+                            break;
+                        case 5:
+                            salesCostByMonth.setMay(total);
+                            break;
+                        case 6:
+                            salesCostByMonth.setJune(total);
+                            break;
+                        case 7:
+                            salesCostByMonth.setJuly(total);
+                            break;
+                        case 8:
+                            salesCostByMonth.setAugust(total);
+                            break;
+                        case 9:
+                            salesCostByMonth.setSeptember(total);
+                            break;
+                        case 10:
+                            salesCostByMonth.setOctober(total);
+                            break;
+                        case 11:
+                            salesCostByMonth.setNovember(total);
+                            break;
+                        case 12:
+                            salesCostByMonth.setDecember(total);
+                            break;
+                }
+                    }else {
+                        switch (i) {
+                            case 1:
+                                salesCostByMonth.setJanuary(new BigDecimal(0.00));
+                                break;
+                            case 2:
+                                salesCostByMonth.setFebruary(new BigDecimal(0.00));
+                                break;
+                            case 3:
+                                salesCostByMonth.setMarch(new BigDecimal(0.00));
+                                break;
+                            case 4:
+                                salesCostByMonth.setApril(new BigDecimal(0.00));
+                                break;
+                            case 5:
+                                salesCostByMonth.setMay(new BigDecimal(0.00));
+                                break;
+                            case 6:
+                                salesCostByMonth.setJune(new BigDecimal(0.00));
+                                break;
+                            case 7:
+                                salesCostByMonth.setJuly(new BigDecimal(0.00));
+                                break;
+                            case 8:
+                                salesCostByMonth.setAugust(new BigDecimal(0.00));
+                                break;
+                            case 9:
+                                salesCostByMonth.setSeptember(new BigDecimal(0.00));
+                                break;
+                            case 10:
+                                salesCostByMonth.setOctober(new BigDecimal(0.00));
+                                break;
+                            case 11:
+                                salesCostByMonth.setNovember(new BigDecimal(0.00));
+                                break;
+                            case 12:
+                                salesCostByMonth.setDecember(new BigDecimal(0.00));
+                                break;
+
+                        }
+                    }
+
+
+            }
+
+        return new ResponseEntity<>( salesCostByMonth, HttpStatus.OK);
     }
 
 

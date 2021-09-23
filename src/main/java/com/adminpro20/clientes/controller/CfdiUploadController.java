@@ -123,9 +123,10 @@ public class CfdiUploadController {
                 } else {
                     invoiceFilled.setCustomer(customerService.save(customer));
                 }
-
+                List<MovementsWharehouse> movementsWharehouses = movementsWharehouseService.sendCustomerInvoiceToAlmacen(invoice);
+                invoice.setMovementsWharehouses(movementsWharehouses);
               Invoice invoicewithsucursal =  invoiceService.save(invoiceFilled);
-                movementsWharehouseService.sendCustomerInvoiceAlmacen(invoicewithsucursal);
+//                movementsWharehouseService.sendCustomerInvoiceAlmacen(invoicewithsucursal);
                 message = "La Factura con Folio: " + unmarshalComprobante.getFolio() + " " + "se agrego con exito";
                 return ResponseEntity.status(HttpStatus.OK).body(message);
 
@@ -143,8 +144,8 @@ public class CfdiUploadController {
                 invoice.setCustomer(customerSaved);
             }
 
-          List<MovementsWharehouse> movementsWharehouses = movementsWharehouseService.sendCustomerInvoiceToAlmacen(invoice);
-          invoice.setMovementsWharehouses(movementsWharehouses);
+            List<MovementsWharehouse> movementsWharehouses = movementsWharehouseService.sendCustomerInvoiceToAlmacen(invoice);
+            invoice.setMovementsWharehouses(movementsWharehouses);
           invoiceService.save(invoiceFilled);
             message = "La Factura con Folio: " + unmarshalComprobante.getFolio() + " " + "se agrego con exito";
 //            movementsWharehouseService.sendCustomerInvoiceAlmacen(invoiceSaved);

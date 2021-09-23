@@ -1,4 +1,4 @@
-package com.adminpro20.clientes.model;
+package com.adminpro20.clientes.model.bank;
 
 import com.adminpro20.clientes.model.conta.SubCuenta;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @Entity
 //@Builder(builderClassName = "CustomerBuild")
 @Table(name = "bank")
-public class Bank extends BaseEntity {
+public class Bank {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

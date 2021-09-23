@@ -1,6 +1,6 @@
 package com.adminpro20.clientes.service.bank;
 
-import com.adminpro20.clientes.model.Bank;
+import com.adminpro20.clientes.model.bank.Bank;
 import com.adminpro20.clientes.model.Invoice;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

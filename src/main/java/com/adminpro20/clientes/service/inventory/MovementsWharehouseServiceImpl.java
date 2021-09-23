@@ -132,8 +132,6 @@ public class MovementsWharehouseServiceImpl implements MovementsWharehouseServic
         for(InvoiceItems item: invoiceItemsList){
             MovementsWharehouse material = new MovementsWharehouse();
             Product product = productRepository.findProductByCode(item.getClaveUnidad());
-            System.out.println("PRODUCT UNIT COST " + product.getUnitCost());
-            System.out.println("ITEM CANTIDAD " + item.getCantidad());
             material.setFecha(item.getDate());
             material.setIssues(item.getCantidad());
             material.setEntrance(new BigDecimal("0.00"));
@@ -141,19 +139,20 @@ public class MovementsWharehouseServiceImpl implements MovementsWharehouseServic
             GregorianCalendar calendar = invoice.getFecha();
             int date = calendar.get(Calendar.MONTH) +1;
             BigDecimal newCost =  productionRepository.getAveCostCodeByMonth(date, item.getClaveUnidad());
+            material.setUnitCost(product.getUnitCost());
+            material.setTotalCost(product.getUnitCost().multiply(item.getCantidad()));
             if(newCost != null){
-                System.out.println("NEW COST "+ newCost);
                 material.setUnitCost(newCost);
                 material.setTotalCost(newCost.multiply(item.getCantidad()));
 
             }
             material.setDescription(item.getDescripcion());
             material.setCode(item.getClaveUnidad());
-            material.setUnitCost(product.getUnitCost());
-            material.setTotalCost(product.getUnitCost().multiply(item.getCantidad()));
+
 //            material.setCustomer(invoice.getCustomer());
             material.setPrice(item.getValorUnitario());
             material.setSubTotal(item.getImporte());
+            material.setCustomer(invoice.getCustomer());
             movementsWharehouses.add(material);
         }
 
@@ -218,6 +217,7 @@ public class MovementsWharehouseServiceImpl implements MovementsWharehouseServic
             material.setPrice(item.getValorUnitario());
             material.setSubTotal(item.getImporte());
             System.out.println("MOVEMENTS WHAREHOUSE " + material.getDescription());
+            material.setSupplier(invoice.getSupplier());
             movementsWharehouseRepository.save(material);
             movementsWharehouses.add(material);
         }
@@ -268,7 +268,10 @@ public class MovementsWharehouseServiceImpl implements MovementsWharehouseServic
             inventory.setQuantity(p.getTotal());
             inventory.setUnitCost(p.getUnitCost());
             inventory.setProduct(p.getDescription());
-            inventory.setTotalCost(new BigDecimal(p.getTotal()).multiply(p.getUnitCost()));
+            if(p.getTotal()>0){
+                inventory.setTotalCost(new BigDecimal(p.getTotal()).multiply(p.getUnitCost()));
+            }
+
             inventories.add(inventory);
         }
 

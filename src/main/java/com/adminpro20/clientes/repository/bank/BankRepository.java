@@ -1,6 +1,6 @@
-package com.adminpro20.clientes.repository;
+package com.adminpro20.clientes.repository.bank;
 
-import com.adminpro20.clientes.model.Bank;
+import com.adminpro20.clientes.model.bank.Bank;
 import org.springframework.data.repository.CrudRepository;
 
 public interface BankRepository extends CrudRepository<Bank, Long> {

@@ -124,6 +124,7 @@ public class ManufatureController {
             System.out.println("INVOICE LIST pasamos por aca");
             Page<Production> productions = productionRepository.getProductionByQuery(gregorianCalendar, gregorianCalendar2, batch, code, product,
                     new BigDecimal(quantity), pageable);
+            String message = "todo ok";
             return new ResponseEntity<>(productions, HttpStatus.OK);
         } catch (JDBCConnectionException exception ) {
             Thread.currentThread().interrupt();
