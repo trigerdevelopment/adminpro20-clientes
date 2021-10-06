@@ -2,6 +2,8 @@ package com.adminpro20.clientes.repository.reports;
 
 import com.adminpro20.clientes.model.Invoice;
 import com.adminpro20.clientes.model.graphic.SalesByCurrency;
+import com.adminpro20.clientes.model.report.GetExpenseTypeIf;
+import com.adminpro20.clientes.model.report.SalesByMonthIf;
 import com.adminpro20.clientes.service.CustomerSalesByMonthIf;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
@@ -17,6 +19,9 @@ public interface SalesReportsRepository extends PagingAndSortingRepository<Invoi
 
     @Query("SELECT SUM(d.total) FROM Invoice d WHERE Month(d.fecha)=?1 AND Year(d.fecha)=?2")
     BigDecimal  getSumTotalByMonth(int date, int year);
+
+    @Query("SELECT SUM(d.total) FROM Invoice d WHERE Month(d.fecha)=?1 AND Year(d.fecha)=?2")
+    List<SalesByMonthIf> getSalesByMonth(int date, int year);
 
 //    @Query("SELECT SUM(d.total) FROM Invoice d GROUP BY Month(d.fecha)=1?")
 

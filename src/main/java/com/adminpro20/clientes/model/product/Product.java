@@ -1,63 +1,42 @@
 package com.adminpro20.clientes.model.product;
 
-
+import com.adminpro20.clientes.model.BaseEntity;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import com.opencsv.bean.CsvBindByName;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.math.BigDecimal;
+import java.util.Date;
+import java.util.prefs.BackingStoreException;
 
 @Getter
 @Setter
 @Entity
-@Table(name = "products")
-public class Product {
+public class Product extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    @CsvBindByName
+    @Column
+    public Date date;
+
+    @Column
     public String code;
 
-    @CsvBindByName
+    @Column
     public String productName;
 
-    @CsvBindByName
+    @Column
     public BigDecimal unitPrice;
 
-    @CsvBindByName
+    @Column
     public BigDecimal unitCost;
 
-    @CsvBindByName
+    @Column
     public String category;
 
-    @CsvBindByName
+    @Column
     public String subCategory;
-
-    public BigDecimal jauCost;
-    public BigDecimal febCost;
-    public BigDecimal marCost;
-    public BigDecimal aprCost;
-    public BigDecimal mayCost;
-    public BigDecimal juneCost;
-    public BigDecimal julCost;
-    public BigDecimal augCost;
-    public BigDecimal sepCost;
-    public BigDecimal octCost;
-    public BigDecimal novCost;
-    public BigDecimal decCost;
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "code='" + code + '\'' +
-                ", productName='" + productName + '\'' +
-                ", unitPrice=" + unitPrice +
-                ", unitCost=" + unitCost +
-                ", category='" + category + '\'' +
-                ", subCategory='" + subCategory + '\'' +
-                '}';
-    }
 }

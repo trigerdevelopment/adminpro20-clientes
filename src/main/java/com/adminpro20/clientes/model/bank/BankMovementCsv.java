@@ -23,14 +23,12 @@ public class BankMovementCsv extends BaseEntity {
     public String cuenta;
 
     @CsvBindByName
-//    @Column
     @Transient
     public String fechaOperacion;
     @Column
     public GregorianCalendar fechaOpg;
 
     @CsvBindByName
-//    @Column
     @Transient
     public String fecha;
     @Column
@@ -44,9 +42,9 @@ public class BankMovementCsv extends BaseEntity {
     @Column
     public String descripcion;
 
-    @CsvBindByName
-    @Column
-    public String codTransac;
+//    @CsvBindByName
+//    @Column
+//    public String codTransac;
 
 //    @CsvBindByName
 //    @Column
@@ -76,7 +74,13 @@ public class BankMovementCsv extends BaseEntity {
     private boolean enabled = false;
 
     @Column
-    private String typeOfCost;
+    private String typeOfExpense;
+
+    @Column
+    private String supplierName;
+
+    @Column
+    private String customerName;
 
 
 }

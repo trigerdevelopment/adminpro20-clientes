@@ -195,7 +195,7 @@ public class BankController {
 //                        bankMovRegister.setCuenta(p.cuenta);
                         bankMovementCsv.setCuenta(p.cuenta);
 //                        bankMovRegister.setCodTransac(p.codTransac);
-                    bankMovementCsv.setCodTransac(p.codTransac);
+//                    bankMovementCsv.setCodTransac(p.codTransac);
                     bankMovementCsv.setDescripcion(p.descripcion);
 //                        bankMovRegister.setDescripcion(p.descripcion);
 //                        bankMovRegister.setMovimiento(p.movimiento);
