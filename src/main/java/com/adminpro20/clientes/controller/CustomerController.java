@@ -1,8 +1,6 @@
 package com.adminpro20.clientes.controller;
 
 import com.adminpro20.clientes.model.Customer;
-import com.adminpro20.clientes.model.CustomerAddress;
-import com.adminpro20.clientes.model.Tipos;
 import com.adminpro20.clientes.repository.CustomerRepository;
 import com.adminpro20.clientes.repository.TiposRepository;
 import com.adminpro20.clientes.service.customer.CustomerService;

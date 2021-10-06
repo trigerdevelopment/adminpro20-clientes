@@ -1,7 +1,6 @@
 package com.adminpro20.clientes.controller;
 
 
-import com.adminpro20.clientes.model.Tipos;
 import com.adminpro20.clientes.model.product.Category;
 import com.adminpro20.clientes.repository.product.CategoryDao;
 import org.springframework.http.HttpStatus;

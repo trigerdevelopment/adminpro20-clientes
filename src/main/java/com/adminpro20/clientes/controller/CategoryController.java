@@ -1,7 +1,7 @@
 package com.adminpro20.clientes.controller;
 
 
-import com.adminpro20.clientes.model.Tipos;
+import com.adminpro20.clientes.model.CustomerCategories;
 import com.adminpro20.clientes.repository.TiposRepository;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpHeaders;
@@ -27,7 +27,7 @@ public class CategoryController {
     @RequestMapping(value = "", method = RequestMethod.GET)
     public ResponseEntity<?> getAllInvoices() {
         try {
-            List<Tipos> customerTypeList = tiposRepository.findAll();
+            List<CustomerCategories> customerTypeList = tiposRepository.findAll();
             if (customerTypeList.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
@@ -39,9 +39,9 @@ public class CategoryController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public ResponseEntity<?> createInvoice(@RequestBody Tipos tipos) {
+    public ResponseEntity<?> createInvoice(@RequestBody CustomerCategories tipos) {
 
-        Tipos customerType1;
+        CustomerCategories customerType1;
         Map<String, Object> response = new HashMap<>();
         try {
             customerType1 = tiposRepository.save(tipos);

@@ -40,6 +40,15 @@ public class ExcelService {
         }
     }
 
+    public void saveCustomerCategoryTrans(MultipartFile file) {
+        try {
+            List<BankingTransactions> tutorials = ExcelHelper.excelToBankMovements(file.getInputStream());
+            bankingTransactionRepository.saveAll(tutorials);
+        } catch (IOException e) {
+            throw new RuntimeException("fail to store excel data: " + e.getMessage());
+        }
+    }
+
     public List<BankAccount> getAllTutorials() {
         return (List<BankAccount>) bankAccountRepository.findAll();
     }

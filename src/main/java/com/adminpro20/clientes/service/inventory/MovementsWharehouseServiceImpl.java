@@ -309,44 +309,45 @@ public class MovementsWharehouseServiceImpl implements MovementsWharehouseServic
         BigDecimal newCost =  productionRepository.getAveCostCodeByMonth(date, production.getCode());
         Product product = productRepository.findProductByCode(production.getCode());
         product.setUnitCost(newCost);
+        product.setDate(calendar.getGregorianChange());
         productRepository.save(product);
 
         switch (date){
             case 1:
-                product.setJauCost(newCost);
+//                product.setJauCost(newCost);
                 break;
             case 2:
-                product.setFebCost(newCost);
+//                product.setFebCost(newCost);
                 break;
             case 3:
-                product.setMarCost(newCost);
+//                product.setMarCost(newCost);
                 break;
             case 4:
-                product.setAprCost(newCost);
+//                product.setAprCost(newCost);
                 break;
             case 5:
-                product.setMayCost(newCost);
+//                product.setMayCost(newCost);
                 break;
             case 6:
-                product.setJuneCost(newCost);
+//                product.setJuneCost(newCost);
                 break;
             case 7:
-                product.setJulCost(newCost);
+//                product.setJulCost(newCost);
                 break;
             case 8:
-                product.setAugCost(newCost);
+//                product.setAugCost(newCost);
                 break;
             case 9:
-                product.setSepCost(newCost);
+//                product.setSepCost(newCost);
                 break;
             case 10:
-                product.setOctCost(newCost);
+//                product.setOctCost(newCost);
                 break;
             case 11:
-                product.setNovCost(newCost);
+//                product.setNovCost(newCost);
                 break;
             case 12:
-                product.setDecCost(newCost);
+//                product.setDecCost(newCost);
                 break;
 
         }

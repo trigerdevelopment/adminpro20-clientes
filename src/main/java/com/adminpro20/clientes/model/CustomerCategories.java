@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Setter
 @Getter
 @Entity
-public class Tipos {
+public class CustomerCategories {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
